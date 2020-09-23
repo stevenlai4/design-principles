@@ -2,6 +2,49 @@
     width:100%;
 }
 
+/* NAVBAR */
+
+nav li {
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+nav a:visited{
+    color:lightgray;
+}
+
+nav a{
+    color:lightgrey;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav li:last-child a {
+    border-bottom: none;
+}
+
+nav a:hover{
+    color: darkgray;
+    border-bottom: none;
+}
+
+.item{
+    text-align: center;
+    display: none;
+}
+
+.active{
+    display:block;
+}
+
+#toggle{
+    text-align: center;
+    font-size: 2em;
+}
+
 /* DESKTOP LAYOUT */
 @media all and (min-width: 960px){
 
