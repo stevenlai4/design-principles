@@ -2,6 +2,12 @@ html{
     box-sizing: border-box;
 }
 
+/* Make ever section take up exactly the viewport height */
+section{
+    height: 100vh;
+    display: flex;
+}
+
 #wrapper{
     max-width:80%;
     margin:0 auto;
@@ -55,7 +61,7 @@ nav a:hover{
 
 
 #banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner_large.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
