@@ -1,8 +1,102 @@
+html{
+    box-sizing: border-box;
+}
+
+/* Make ever section take up exactly the viewport height */
+section{
+    height: 100vh;
+    display: flex;
+}
+
 #wrapper{
-    width:100%;
+    max-width:80%;
+    margin:0 auto;
+    overflow: auto;
+}
+
+/* NAVBAR */
+nav li {
+    list-style-type: none;
+    padding-top: 1em;
+
+}
+
+nav a:visited{
+    color:lightgray;
+}
+
+nav a{
+    color:lightgrey;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav li:last-child a {
+    border-bottom: none;
+}
+
+nav a:hover{
+    color: darkgray;
+    border-bottom: none;
+}
+
+.item{
+    text-align: center;
+    display: none;
+}
+
+.active{
+    display:block;
+}
+
+#toggle{
+    text-align: center;
+    font-size: 2em;
+}
+
+/* BANNER */
+
+
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+#banner h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
 }
 
 /* DESKTOP LAYOUT */
-@media all and (min-width: 960px){
+@media all and (min-width: 960px) {
+    nav ul{
+        display:flex;
+        justify-content: left;
+    }
+
+    nav li {
+        padding-right: 1em;
+    }
+
+    #toggle{
+        display:none;
+    }
+
+    .item{
+        display:block;
+    }
 
 }
