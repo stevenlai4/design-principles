@@ -75,10 +75,9 @@ footer p {
     position:fixed;
     bottom:0;
     right:0;
-    width:70px;
-    height:70px;
+    padding: 40px;
     font-size: 2em;
-    z-index: 100;
+    z-index: 1;
 }
 
 nav li {
