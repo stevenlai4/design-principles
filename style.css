@@ -14,12 +14,14 @@ body {
     margin: 0;
     overflow: auto;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #a0c1b8;
 }
 
 /* Make ever section take up exactly the viewport height */
 section{
     height: 100vh;
     display: flex;
+    background-color: #709fb0;
 }
 
 #wrapper{
@@ -39,7 +41,6 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #E5E5E5;
 }
 
 #contrast > h2 {
@@ -61,7 +62,7 @@ main {
 
 /* footer */
 footer {
-    background-color: lightgray;
+    background-color:  #726a95;
     padding: 50px 0;
     text-align: center;
 }
@@ -150,7 +151,7 @@ nav a:hover{
         position: fixed;
         top: 0;
         z-index: 1;
-        background-color: rgba(0,0,0,128);
+        background-color: #726a95;
     }
 
     #contrast {
