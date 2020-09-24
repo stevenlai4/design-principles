@@ -12,20 +12,64 @@ html {
 body {
     margin: 0;
     overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Make ever section take up exactly the viewport height */
 section {
     height: 100vh;
+    display: flex;
+}
+
+#wrapper{
+    max-width:80%;
+    margin:0 auto;
+    overflow: auto;
+}
+
+
+/* main */
+main {
+    width: 100%;
+}
+
+/* contrast */
+#contrast {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
+#contrast > h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+#contrast > p {
+    text-align: justify;
+    padding: 0 5% 30px 5%;
 }
 
 #wrapper {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     overflow: auto;
 }
 
 /* NAVBAR */
+#sticky_link{
+    display:inline;
+    position:fixed;
+    bottom:0;
+    right:0;
+    padding: 40px;
+    font-size: 2em;
+    z-index: 1;
+}
+
 nav li {
     list-style-type: none;
     padding-top: 1em;
@@ -38,7 +82,6 @@ nav a:visited {
 nav a {
     color: lightgrey;
     font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid lightgray;
     text-decoration: none;
     font-size: 1.2em;
@@ -71,7 +114,7 @@ nav a:hover {
 
 #banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('./images/banner_large.jpg');
+                      url('./images/banner_large.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +123,6 @@ nav a:hover {
 }
 
 #banner h1 {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     position: absolute;
@@ -214,6 +256,13 @@ footer p {
         display: block;
     }
 
+    nav{
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(0,0,0,128);
+    }
+
     /* CONTRAST */
     #contrast {
         display: grid;
@@ -299,6 +348,9 @@ footer p {
         padding: 0 40px 0 0;
     }
 
+    #sticky_link{
+        display: none;
+    }
     /* PROXIMITY */
     #proximity {
         background-color: wheat;
