@@ -51,11 +51,11 @@ nav li {
 }
 
 nav a:visited {
-    color: lightgray;
+    color: white;
 }
 
 nav a {
-    color: lightgrey;
+    color: white;
     font-weight: 100;
     text-decoration: none;
     font-size: 1.2em;
@@ -116,6 +116,8 @@ section {
     flex-direction: column;
     text-align: center;
     border-bottom: 4px solid #000;
+    font-size: 1.5em;
+    line-height: 1.5;
 }
 
 section > h2 {
