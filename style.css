@@ -26,6 +26,7 @@ body {
 /* NAVBAR */
 nav {
     background-color: #5b84b1ff;
+    border-bottom: 2px solid #000;
 }
 
 #toggle {
